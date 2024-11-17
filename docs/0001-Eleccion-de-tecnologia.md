@@ -1,6 +1,6 @@
 ---
 # These are optional metadata elements. Feel free to remove any of them.
-status: "proposed"
+status: "acepted"
 date: {2024-11-15}
 decision-makers: {Matias La Pioggia, Mauro Belmonte}
 consulted: {Valentin Leiba}
@@ -38,3 +38,7 @@ Chosen option: "Contenedores", Elegimos contenedores porque es una tecnologia co
 * Ventajas: Ligereza y rápida implementación. Flexibilidad y escalabilidad horizontal fáciles de gestionar. Contenedores son portables y permiten una administración centralizada con herramientas de orquestación (Kubernetes, Docker Swarm).
 
 * Desventajas: Requiere orquestación (e.g., Kubernetes) para una administración eficiente a gran escala. Añade una capa de complejidad en comparación con sistemas tradicionales.
+
+### Confirmation
+
+La decisión de usar contenedores para migrar a microservicios es acertada, ya que favorece la escalabilidad, disponibilidad y mantenimiento, además de ser una tecnología con la que estamos familiarizados. 
