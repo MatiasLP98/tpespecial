@@ -1,6 +1,6 @@
 ---
 # These are optional metadata elements. Feel free to remove any of them.
-status: "proposed"
+status: "acepted"
 date: {2024/11/17}
 decision-makers: {Mauro Belmonte, Valentin Leiba, Matias La Pioggia}
 consulted: {Mauro Belmonte, Valentin Leiba, Matias La Pioggia}
@@ -42,3 +42,6 @@ Chosen option: Kubernetes, ya que nos permite:
 * Good: mejor capacidad de escalabilidad y disponibilidad para los servicios criticos.
 * Good: simplificacion del proceso de despliegue y gestion.
 * Bad: requiere un tiempo adicional de desarrollo para configurar e implementar Kubernetes.
+
+### Confirmation
+La decisión de adoptar Kubernetes para gestionar los servicios críticos de clientes y pagos es adecuada, ya que garantiza alta disponibilidad y escalabilidad en tiempo real.
