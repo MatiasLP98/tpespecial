@@ -11,22 +11,22 @@ informed: {-}
 
 ## Context and Problem Statement
 
-{El cliente solicito realizar la migracion de su sistema, partiendo de una arquitectura monolitica a una basada en microservicios}
+El cliente solicito realizar la migracion de su sistema, partiendo de una arquitectura monolitica a una basada en microservicios
 
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
-* {Favorecer la escalabilidad del sistema}
-* {Asegurar la disponibilidad del sistema en contextos de alta demanda}
-* {Facilitar el mantenimiento}
-* {Mejorar la seguridad}
+* Favorecer la escalabilidad del sistema
+* Asegurar la disponibilidad del sistema en contextos de alta demanda
+* Facilitar el mantenimiento
+* Mejorar la seguridad
 
 ## Considered Options
 
-* {contenedores}
-* {maquinas virtuales}
-* {Servicios Serverless como amazon lambda}
-* {infraestructura fisica propia para cada microservicio}
+* Contenedores
+* Maquinas Virtuales
+* Servicios Serverless
+* Infraestructura fisica propia para cada microservicio
 
 ## Decision Outcome
 
