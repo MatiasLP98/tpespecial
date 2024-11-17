@@ -1,6 +1,6 @@
 ---
-status: "proposed"
-date: {2024-11-13}
+status: "accepted"
+date: {2024-11-17}
 decision-makers: {Matias La Pioggia}
 consulted: {Mauro Belmonte, Valentin Leiba}
 informed: {-}
