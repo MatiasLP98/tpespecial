@@ -1,6 +1,6 @@
 ---
 # These are optional metadata elements. Feel free to remove any of them.
-status: "{proposed}
+status: "acepted"
 date: {2024-11-17}
 decision-makers: {Matias La Pioggia}
 consulted: {Mauro Belmonte, Valentin Leiba}
@@ -39,3 +39,5 @@ Chosen option: "Contenedores", es la unica opcion para este caso, puesto que es 
 * Bueno, porque aporta escalabilidad horizontal.
 * Malo, porque la complejidad de mantener los modulos sincronizados entre si puede aumentar a medida que crezca el sistema
 
+### Confirmation
+La decisión de comenzar la migración utilizando el patrón Strangler y priorizar los módulos críticos (Clientes, Pagos, Reparto y rutas) es acertada, ya que asegura la continuidad operativa y minimiza el impacto en la disponibilidad del sistema.
