@@ -1,6 +1,6 @@
 ---
 # These are optional metadata elements. Feel free to remove any of them.
-status: "proposed"
+status: "acepted"
 date: {2024-11-18}
 decision-makers: {Mauro Belmonte, Matias LaPioggia}
 consulted: {Valentin Leiba}
@@ -43,12 +43,8 @@ permitiendo el uso de multiples algoritmos de optimizacion de rutas habilitando 
 * Bad: Requiere un esfuerzo inicial mayor para implementar la modularidad y el sistema de monitoreo.
 * Bad: Incrementa la complejidad del sistema, lo que podria dificultar el mantenimiento en el corto plazo.
 
-
-//////////////////////////////con la confirmacion agregar
-
-Confirmation
+### Confirmation
 Se propondrá un despliegue inicial en un entorno controlado para:
-
 Validar el rendimiento de los algoritmos de optimización en condiciones simuladas y en escenarios reales.
 Realizar un despliegue canary que permita probar la gestión de incidencias en un subconjunto de rutas críticas.
 Monitorear métricas clave como el tiempo de optimización de rutas, tasa de éxito en la resolución de incidencias y costos operativos.
