@@ -1,0 +1,46 @@
+---
+# These are optional metadata elements. Feel free to remove any of them.
+status: "proposed"
+date: {2024-11-18}
+decision-makers: {Matias La Pioggia, Mauro Belmonte}
+consulted: {Valentin Leiba}
+informed: {Equipo de dev}
+---
+
+# Desarrollo del servicio de Pedidos y Optimización de la Escalabilidad
+
+## Context and Problem Statement
+
+La gestion de pedidos es uno de los servicios esenciales en el sistema y requiere un manejo eficiente de estados (preprocesado, autorizacion y aceptacion). 
+Este flujo debe ser robusto y capaz de manejar altas cargas durante picos de demanda. La ausencia de un sistema de escalado automático 
+podria limitar la capacidad del servicio de responder eficientemente a este aumento en las solicitudes.
+
+Para garantizar la correcta sincronización entre fases y reducir la latencia, se necesita un diseño que asegure el rendimiento.
+<!-- This is an optional element. Feel free to remove. -->
+## Decision Drivers
+
+* Escalabilidad: manejar eficazmente la demanda fluctuante, especialmente durante picos.
+* Rendimiento: minimizar la latencia en el procesamiento y sincronizacion de pedidos.
+* Confiabilidad: asegurar que cada pedido pase correctamente por las tres fases de su ciclo de vida.
+
+## Considered Options
+
+* Incorporar un orquestador de procesos (ejemplo: saga pattern) para manejar el flujo de estados de los pedidos.
+* Configurar un sistema de escalado automatico para el microservicio de pedidos, usando soluciones como kubernetes HPA o herramientas de autoescalado en la nube.
+
+## Decision Outcome
+
+Chosen option: configurar escalado automático para el microservicio de Pedidos, permitiendo que el sistema maneje eficientemente picos de demanda
+
+<!-- This is an optional element. Feel free to remove. -->
+### Consequences
+
+Good: Los estados de los pedidos estaran claramente definidos y gestionados, reduciendo errores en el flujo.
+Good: La escalabilidad horizontal permitirá manejar altos volumenes de trafico sin impacto significativo en el rendimiento.
+Bad: El escalado automatico puede incurrir en costos adicionales de infraestructura durante periodos prolongados de alta demanda.
+
+<!-- This is an optional element. Feel free to remove. -->
+### Confirmation
+
+Se evaluara el diseño del microservicio de pedidos mediante pruebas de carga en un entorno controlado para medir la escalabilidad y la latencia. 
+Además, se realizarán revisiones de diseño para confirmar que el orquestador maneja correctamente las transiciones entre estados.
