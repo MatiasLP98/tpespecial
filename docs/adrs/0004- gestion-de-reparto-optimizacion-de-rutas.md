@@ -7,7 +7,7 @@ consulted: {Valentin Leiba}
 informed: {Equipo de Desarrollo}
 ---
 
-# Iteracion 5: gestion de reparto y optimizacion de rutas
+# Iteracion 4: gestion de reparto y optimizacion de rutas
 
 ## Context and Problem Statement
 
